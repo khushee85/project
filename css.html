@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Header</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: rgba(255, 255, 255, 0.877);
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 115, 0, 0.712);
+  border-radius: 5px;
+}
+
+#logo{
+  width: 30px;
+  height: auto;
+  display: block;
+  margin-left: 2px;
+}
+
+.slider-header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 60%;
+  position: relative;
+  gap: 20px;
+  justify-content: center;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 15s infinite;
+  row-gap: 20px;
+}
+
+.slides img {
+  width: 60%;
+  height: 65%;
+  margin-top: 60px;
+  column-gap: 20px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jobsopt</h1>
+    <img id="logo" src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-18 at 10.47.06 PM.jpeg" alt="My logo">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="timing.html">Timing</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="button.html">Registration</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header style="background-color: beige;" class="slider-header">
+    <div class="slider">
+      <div class="slides">
+        <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-16 at 5.28.30 PM.jpeg"alt="Slide 1">
+        <br>
+        <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-16 at 5.28.30 PM (1).jpeg"alt="Slide 2">
+        <br>
+        <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-16 at 5.28.31 PM.jpeg"alt="Slide 3">
+        <br>
+        <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-16 at 5.52.39 PM.jpeg"alt="Slide 4">
+        <br>
+        <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-16 at 5.55.29 PM.jpeg"alt="Slide 5">
+        <br>
+        <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-16 at 5.52.58 PM.jpeg"alt="Slide 6">      
+      </div>
+    </div>
+  </header>
+  <script src="script.js">
+    const logo= document.getElementById('logo');
+
+    logo.addEventListener('mouseenter', () => { logo.src= 'logo-hover.png';});
+
+    logo.addEventListener('mouseleave', () => { logo.src='C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-18 at 10.47.06 PM.jpeg';});
+  </script>
+
+</body>
+</html>

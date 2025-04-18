@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Clickable Image</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .clickable-image {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      max-width: 850px;
+      border-radius: 10px;
+    }
+    .clickable-image:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <a id="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-18 at 5.18.33 PM.jpeg" href="css.html" target="_blank">
+    <img src="C:\Users\Pratik Solanki\Downloads\WhatsApp Image 2025-04-18 at 5.18.33 PM.jpeg" alt="Welcome Image" class="clickable-image" />
+  </a>
+
+  <script>
+    // If you want to dynamically change the link or do more advanced logic, you can do it here.
+    const imageLink = document.getElementById('imageLink');
+
+    // Example: You can set the href dynamically
+    imageLink.href = "yourfile.pdf"; // Replace with the actual file path or URL
+  </script>
+
+</body>
+</html>
